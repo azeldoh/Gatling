@@ -13,7 +13,9 @@ class GatlingFunSpecExampleIT extends GatlingHttpFunSpec {
   spec {
     http("Example index.html test")
       .get("/index.html")
+      .check(body.exists)
       .check(h1.exists)
+      .check(footer.exists)
   }
 
 }
