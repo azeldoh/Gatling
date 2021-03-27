@@ -23,5 +23,7 @@ class GatlingFunSpecExampleIT extends GatlingHttpFunSpec {
 object GatlingFunSpecExampleIT {
 
   def h1 = css("h1")
+  def body = css("body")
+  def footer = css("footer")
 
 }
